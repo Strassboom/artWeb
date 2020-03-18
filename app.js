@@ -34,10 +34,10 @@ app.get('/', (request, response) => {
                 response.writeHead(200,{'Content-type':'image/jpg'});
                 response.end(content);
             }
-    })
-    .catch((error) => {
-     // Handle your error
-    });
+        })
+        .catch((error) => {
+        // Handle your error
+    })});
     console.log('/');
 })
 
@@ -55,4 +55,4 @@ app.listen(port, (err) => {
     }
 
     console.log(`server is listening on ${port}`);
-})
+});
